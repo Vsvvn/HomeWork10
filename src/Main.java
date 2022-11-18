@@ -28,43 +28,43 @@ public class Main {
         System.out.println("Проверка корректного написания ФИО с заменой буквы ё на е.");
         System.out.println();
 
-        String[] SplitFullName1 = fullName1.split(" ");
-        String[] SplitFullNameCharChange = fullNameCharChange.split(" ");
+        String[] splitFullName1 = fullName1.split(" ");
+        String[] splitFullNameCharChange = fullNameCharChange.split(" ");
 
-        for (int i = 0; i < SplitFullNameCharChange.length - 2 && i < SplitFullName1.length - 2; i++) {
-            if (SplitFullNameCharChange[i].contains("е")) {
-                System.out.println("В фамилии " + SplitFullName1[i] + " буква ё заменена на букву е: " + SplitFullNameCharChange[i] + ".");
+        for (int i = 0; i < splitFullNameCharChange.length - 2 && i < splitFullName1.length - 2; i++) {
+            if (splitFullNameCharChange[i].contains("е")) {
+                System.out.println("В фамилии " + splitFullName1[i] + " буква ё заменена на букву е: " + splitFullNameCharChange[i] + ".");
             } else {
-                if (SplitFullNameCharChange[i].contains("ё")) {
-                    System.out.println("В фамилии" + SplitFullName1[i] + " буква ё заменена на букву е: " + SplitFullNameCharChange[i] + ".");
+                if (splitFullNameCharChange[i].contains("ё")) {
+                    System.out.println("В фамилии" + splitFullName1[i] + " буква ё заменена на букву е: " + splitFullNameCharChange[i] + ".");
                 } else {
-                    System.out.println("Буквы ё или е нет в данной фамилии: " + SplitFullNameCharChange[i] + ". Ничего исправлять не нужно");
+                    System.out.println("Буквы ё или е нет в данной фамилии: " + splitFullNameCharChange[i] + ". Ничего исправлять не нужно");
                     break;
                 }
             }
         }
 
-        for (int i = 1; i < SplitFullNameCharChange.length - 1 && i < SplitFullName1.length - 1; i++) {
-            if (SplitFullNameCharChange[i].contains("е")) {
-                System.out.println("В имени " + SplitFullName1[i] + " буква ё заменена на букву е: " + SplitFullNameCharChange[i] + ".");
+        for (int i = 1; i < splitFullNameCharChange.length - 1 && i < splitFullName1.length - 1; i++) {
+            if (splitFullNameCharChange[i].contains("е")) {
+                System.out.println("В имени " + splitFullName1[i] + " буква ё заменена на букву е: " + splitFullNameCharChange[i] + ".");
             } else {
-                if (SplitFullNameCharChange[i].contains("ё")) {
-                    System.out.println("В имени" + SplitFullName1[i] + " буква ё заменена на букву е: " + SplitFullNameCharChange[i] + ".");
+                if (splitFullNameCharChange[i].contains("ё")) {
+                    System.out.println("В имени" + splitFullName1[i] + " буква ё заменена на букву е: " + splitFullNameCharChange[i] + ".");
                 } else {
-                    System.out.println("Буквы ё или е нет в данном имени: " + SplitFullNameCharChange[i] + ". Ничего исправлять не нужно.");
+                    System.out.println("Буквы ё или е нет в данном имени: " + splitFullNameCharChange[i] + ". Ничего исправлять не нужно.");
                     break;
                 }
             }
         }
 
-        for (int i = 2; i < SplitFullNameCharChange.length && i < SplitFullName1.length; i++) {
-            if (SplitFullNameCharChange[i].contains("е")) {
-                System.out.println("В отчестве " + SplitFullName1[i] + " буква ё заменена на букву е: " + SplitFullNameCharChange[i] + ".");
+        for (int i = 2; i < splitFullNameCharChange.length && i < splitFullName1.length; i++) {
+            if (splitFullNameCharChange[i].contains("е")) {
+                System.out.println("В отчестве " + splitFullName1[i] + " буква ё заменена на букву е: " + splitFullNameCharChange[i] + ".");
             } else {
-                if (SplitFullNameCharChange[i].contains("ё")) {
-                    System.out.println("В отчестве " + SplitFullName1[i] + " буква ё заменена на букву е: " + SplitFullNameCharChange[i] + ".");
+                if (splitFullNameCharChange[i].contains("ё")) {
+                    System.out.println("В отчестве " + splitFullName1[i] + " буква ё заменена на букву е: " + splitFullNameCharChange[i] + ".");
                 } else {
-                    System.out.println("Буквы ё или е нет в данном отчестве: " + SplitFullNameCharChange[i] + ". Ничего исправлять не нужно.");
+                    System.out.println("Буквы ё или е нет в данном отчестве: " + splitFullNameCharChange[i] + ". Ничего исправлять не нужно.");
                     break;
                 }
             }
